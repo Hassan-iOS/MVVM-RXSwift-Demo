@@ -21,6 +21,12 @@
 		DDA0036224CCB72E00113F7B /* BaseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA0036124CCB72E00113F7B /* BaseErrorModel.swift */; };
 		DDA0036424CCC07900113F7B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA0036324CCC07900113F7B /* HomeViewController.swift */; };
 		DDA0036624CCC77100113F7B /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA0036524CCC77100113F7B /* CustomAlert.swift */; };
+		DDDBA77C24CF676200FB07C9 /* BranchesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDBA77B24CF676200FB07C9 /* BranchesModel.swift */; };
+		DDDBA78024CF6ADB00FB07C9 /* Branches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDBA77F24CF6ADB00FB07C9 /* Branches.storyboard */; };
+		DDDBA78224CF6B7800FB07C9 /* BranchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDBA78124CF6B7800FB07C9 /* BranchesViewController.swift */; };
+		DDDBA78524CF6BD000FB07C9 /* BranchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDBA78324CF6BD000FB07C9 /* BranchTableViewCell.swift */; };
+		DDDBA78624CF6BD000FB07C9 /* BranchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDBA78424CF6BD000FB07C9 /* BranchTableViewCell.xib */; };
+		DDDBA78824CF6C9E00FB07C9 /* BranchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDBA78724CF6C9E00FB07C9 /* BranchesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		DDA0036124CCB72E00113F7B /* BaseErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorModel.swift; sourceTree = "<group>"; };
 		DDA0036324CCC07900113F7B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DDA0036524CCC77100113F7B /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		DDDBA77B24CF676200FB07C9 /* BranchesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesModel.swift; sourceTree = "<group>"; };
+		DDDBA77F24CF6ADB00FB07C9 /* Branches.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Branches.storyboard; sourceTree = "<group>"; };
+		DDDBA78124CF6B7800FB07C9 /* BranchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesViewController.swift; sourceTree = "<group>"; };
+		DDDBA78324CF6BD000FB07C9 /* BranchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchTableViewCell.swift; sourceTree = "<group>"; };
+		DDDBA78424CF6BD000FB07C9 /* BranchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BranchTableViewCell.xib; sourceTree = "<group>"; };
+		DDDBA78724CF6C9E00FB07C9 /* BranchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		DDA0033C24CC9B4D00113F7B /* MVVM-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DDDBA77724CF673A00FB07C9 /* Branches */,
 				DDA0035C24CCA63600113F7B /* APIService */,
 				DDA0035624CC9F3A00113F7B /* Login */,
 				DDA0033D24CC9B4D00113F7B /* AppDelegate.swift */,
@@ -150,6 +163,59 @@
 				DDA0035D24CCA64F00113F7B /* APIService.swift */,
 			);
 			path = APIService;
+			sourceTree = "<group>";
+		};
+		DDDBA77724CF673A00FB07C9 /* Branches */ = {
+			isa = PBXGroup;
+			children = (
+				DDDBA77A24CF675200FB07C9 /* ViewModel */,
+				DDDBA77924CF674B00FB07C9 /* View */,
+				DDDBA77824CF674400FB07C9 /* Model */,
+			);
+			path = Branches;
+			sourceTree = "<group>";
+		};
+		DDDBA77824CF674400FB07C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDDBA77B24CF676200FB07C9 /* BranchesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDDBA77924CF674B00FB07C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDDBA77E24CF6ACA00FB07C9 /* Cell */,
+				DDDBA77D24CF6ABC00FB07C9 /* Storyboard + Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDDBA77A24CF675200FB07C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDDBA78724CF6C9E00FB07C9 /* BranchesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDDBA77D24CF6ABC00FB07C9 /* Storyboard + Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDDBA77F24CF6ADB00FB07C9 /* Branches.storyboard */,
+				DDDBA78124CF6B7800FB07C9 /* BranchesViewController.swift */,
+			);
+			path = "Storyboard + Controller";
+			sourceTree = "<group>";
+		};
+		DDDBA77E24CF6ACA00FB07C9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DDDBA78324CF6BD000FB07C9 /* BranchTableViewCell.swift */,
+				DDDBA78424CF6BD000FB07C9 /* BranchTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +278,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDBA78024CF6ADB00FB07C9 /* Branches.storyboard in Resources */,
 				DDA0034D24CC9B5000113F7B /* LaunchScreen.storyboard in Resources */,
 				DDA0034A24CC9B5000113F7B /* Assets.xcassets in Resources */,
+				DDDBA78624CF6BD000FB07C9 /* BranchTableViewCell.xib in Resources */,
 				DDA0034524CC9B4D00113F7B /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,15 +335,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDBA78224CF6B7800FB07C9 /* BranchesViewController.swift in Sources */,
 				DDA0034824CC9B4D00113F7B /* MVVM_Demo.xcdatamodeld in Sources */,
 				DDA0035524CC9CE500113F7B /* UIViewController + Extension.swift in Sources */,
 				DDA0034224CC9B4D00113F7B /* LoginViewController.swift in Sources */,
 				DDA0035B24CCA51B00113F7B /* LoginViewModel.swift in Sources */,
 				DDA0036024CCB6D500113F7B /* LoginSuccessModel.swift in Sources */,
+				DDDBA78524CF6BD000FB07C9 /* BranchTableViewCell.swift in Sources */,
 				DDA0036424CCC07900113F7B /* HomeViewController.swift in Sources */,
 				DDA0036224CCB72E00113F7B /* BaseErrorModel.swift in Sources */,
 				DDA0035E24CCA64F00113F7B /* APIService.swift in Sources */,
+				DDDBA78824CF6C9E00FB07C9 /* BranchesViewModel.swift in Sources */,
 				DDA0033E24CC9B4D00113F7B /* AppDelegate.swift in Sources */,
+				DDDBA77C24CF676200FB07C9 /* BranchesModel.swift in Sources */,
 				DDA0036624CCC77100113F7B /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

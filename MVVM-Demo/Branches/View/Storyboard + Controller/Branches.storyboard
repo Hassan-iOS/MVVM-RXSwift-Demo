@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f0E-hc-1bE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Branches View Controller-->
+        <scene sceneID="dTu-TM-zcH">
+            <objects>
+                <viewController storyboardIdentifier="BranchesViewController" id="f0E-hc-1bE" customClass="BranchesViewController" customModule="MVVM_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EwX-kg-fIz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnR-1w-X3g" userLabel="No Branches View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Branches..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr7-Nf-Udb">
+                                        <rect key="frame" x="151" y="398.5" width="112.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cr7-Nf-Udb" firstAttribute="centerX" secondItem="DnR-1w-X3g" secondAttribute="centerX" id="6Xe-6w-g1c"/>
+                                    <constraint firstItem="cr7-Nf-Udb" firstAttribute="centerY" secondItem="DnR-1w-X3g" secondAttribute="centerY" id="b3G-4Q-JXe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fms-xq-nD6" userLabel="Branches Container View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lbN-fd-7ER">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lbN-fd-7ER" secondAttribute="trailing" id="PeP-sx-2BT"/>
+                                    <constraint firstItem="lbN-fd-7ER" firstAttribute="top" secondItem="fms-xq-nD6" secondAttribute="top" id="QWW-R4-858"/>
+                                    <constraint firstItem="lbN-fd-7ER" firstAttribute="leading" secondItem="fms-xq-nD6" secondAttribute="leading" id="SEz-p2-ajF"/>
+                                    <constraint firstAttribute="bottom" secondItem="lbN-fd-7ER" secondAttribute="bottom" id="cgd-b8-NXa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DnR-1w-X3g" firstAttribute="top" secondItem="wYd-ks-7Ef" secondAttribute="top" id="2cE-HD-SBK"/>
+                            <constraint firstItem="wYd-ks-7Ef" firstAttribute="bottom" secondItem="DnR-1w-X3g" secondAttribute="bottom" id="3Lo-YN-lN9"/>
+                            <constraint firstItem="wYd-ks-7Ef" firstAttribute="trailing" secondItem="DnR-1w-X3g" secondAttribute="trailing" id="80e-cP-FrO"/>
+                            <constraint firstItem="DnR-1w-X3g" firstAttribute="leading" secondItem="wYd-ks-7Ef" secondAttribute="leading" id="M6O-6p-sL6"/>
+                            <constraint firstItem="fms-xq-nD6" firstAttribute="bottom" secondItem="DnR-1w-X3g" secondAttribute="bottom" id="Oez-Eo-maf"/>
+                            <constraint firstItem="fms-xq-nD6" firstAttribute="leading" secondItem="DnR-1w-X3g" secondAttribute="leading" id="a6e-jO-6b4"/>
+                            <constraint firstItem="fms-xq-nD6" firstAttribute="top" secondItem="DnR-1w-X3g" secondAttribute="top" id="qdy-kS-Sgg"/>
+                            <constraint firstItem="fms-xq-nD6" firstAttribute="trailing" secondItem="DnR-1w-X3g" secondAttribute="trailing" id="rqe-vk-jfJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wYd-ks-7Ef"/>
+                    </view>
+                    <connections>
+                        <outlet property="branchesContainerView" destination="fms-xq-nD6" id="Nzx-ZX-lM2"/>
+                        <outlet property="branchesTableView" destination="lbN-fd-7ER" id="pjb-Zd-w7V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Dy-VX-BDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="137"/>
+        </scene>
+    </scenes>
+</document>

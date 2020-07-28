@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
         loginViewModel.loginModelObservable.subscribe(onNext: {
             if $0.statusCode == 200 {
                 print($0.data?.phone ?? "")
-                if let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
+                if let homeVC = UIStoryboard(name: "Branches", bundle: nil).instantiateViewController(withIdentifier: "BranchesViewController") as? BranchesViewController {
                    self.present(homeVC, animated: true)
                 }
             } else {
